@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fa">
+    <meta name="description" content="A simple, read-only calendar for your local Org files.">
+    <title>Org calendar</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/vendor/ical-1.5.0.min.js" integrity="sha256-uotVKltUv5neKsIlZxrxUccba0PaptusFj6p+w8Sons="></script>
+    <script defer src="/static/vendor/fullcalendar-6.1.20.min.js" integrity="sha256-sQEgS6I+FEeOlX4oTVi7qW/HMRAh0O6vifpeZXIMRsg="></script>
+    <script defer src="/static/vendor/fullcalendar-icalendar-6.1.20.min.js" integrity="sha256-xk23VBvXgkxbXVMw7f9o8EV8UUwgX7hybd9Z7X9pv2A="></script>
+    <script defer src="/static/calendar.js"></script>
+  </head>
+  <body>
+    <div id="drop-overlay" hidden aria-hidden="true">Drop an .org file to view its calendar</div>
+    <main>
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">LOCAL AGENDA <span aria-hidden="true">/</span> READ ONLY</p>
+          <h1>Org calendar<span class="title-dot" aria-hidden="true">.</span></h1>
+          <p class="subtitle">A little perspective on what’s ahead.</p>
+        </div>
+        <div class="page-actions">
+          <input id="org-file" type="file" accept=".org" hidden>
+          <button id="upload" class="action-button" type="button" disabled>Upload .org</button>
+          <button id="reset" class="action-button" type="button" hidden>Use default</button>
+          <button id="refresh" class="action-button" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 6.6M20 4v7h-7"/></svg>
+            <span>Refresh</span>
+          </button>
+        </div>
+      </header>
+      <p id="source" class="source-name">Default calendar</p>
+      <p class="upload-hint">Drop an .org file anywhere, or use Upload .org.</p>
+      <div class="calendar-meta">
+        <ul class="legend" aria-label="Event types">
+          <li><span class="dot timestamp"></span>Timestamp</li>
+          <li><span class="dot scheduled"></span>Scheduled</li>
+          <li><span class="dot deadline"></span>Deadline</li>
+        </ul>
+        <p id="status" role="status" aria-live="polite">Loading calendar…</p>
+      </div>
+      <p id="warning" role="alert" hidden></p>
+      <noscript><p class="notice">Enable JavaScript to view the calendar.</p></noscript>
+      <section class="calendar-panel" aria-label="Calendar">
+        <div id="calendar"></div>
+        <p id="empty" hidden>No events in this view.</p>
+      </section>
+      <footer><span>Made room for your plans.</span><span id="timezone"></span></footer>
+    </main>
+  </body>
+</html>

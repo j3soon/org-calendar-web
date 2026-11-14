@@ -1,0 +1,15 @@
+services:
+  calendar:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${CALENDAR_PORT:-18000}:8000"
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+        read_only: true
+        bind:
+          create_host_path: false
+    logging:
+      driver: local

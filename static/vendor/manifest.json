@@ -1,0 +1,26 @@
+{
+  "ical-1.5.0.min.js": {
+    "url": "https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js",
+    "sha256": "ba8b552a5b54bf99de2ac225671af151c71b6b43daa6dbac163ea9fb0f12a27b"
+  },
+  "fullcalendar-6.1.20.min.js": {
+    "url": "https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js",
+    "sha256": "b101204ba23e14478e957e284d58bba96fc7311021d0eeaf89fa5e65720c46c8"
+  },
+  "fullcalendar-icalendar-6.1.20.min.js": {
+    "url": "https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.20/index.global.min.js",
+    "sha256": "c64db7541bd7824c5b5d5330edff68f0457c514c205fb8726ddf59ed7f69bf60"
+  },
+  "LICENSE-fullcalendar.txt": {
+    "url": "https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/LICENSE.md",
+    "sha256": "4c0b0dae26c99e3b11be70b990a703be4deb75e21884104582e0e217786d3209"
+  },
+  "LICENSE-fullcalendar-icalendar.txt": {
+    "url": "https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.20/LICENSE.md",
+    "sha256": "4c0b0dae26c99e3b11be70b990a703be4deb75e21884104582e0e217786d3209"
+  },
+  "LICENSE-ical.txt": {
+    "url": "https://cdn.jsdelivr.net/npm/ical.js@1.5.0/LICENSE",
+    "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+  }
+}

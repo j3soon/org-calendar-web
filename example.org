@@ -1,0 +1,20 @@
+#+TITLE: Example calendar
+
+* Morning focus
+  <2026-11-16 Mon 09:00-10:30 +1w>
+  A little uninterrupted time for the week ahead.
+
+* Weekly planning
+  SCHEDULED: <2026-11-16 Mon 11:00 +1w>
+
+* Send the project update
+  DEADLINE: <2026-11-18 Wed +1w>
+
+* Coffee with Alex
+  <2026-11-19 Thu 14:00-15:00>
+
+* A day outside
+  <2026-11-21 Sat>
+
+* Long weekend
+  <2026-11-27 Fri>--<2026-11-29 Sun>
