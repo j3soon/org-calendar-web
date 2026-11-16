@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     headerToolbar: { left: "prev,next today", center: "title", right: "dayGridMonth,timeGridWeek" },
     buttonText: { today: "Today", month: "Month", week: "Week" },
     timeZone: "local",
-    firstDay: 1,
+    firstDay: 0,
     height: "auto",
     nowIndicator: true,
     editable: false,
