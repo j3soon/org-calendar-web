@@ -110,8 +110,8 @@ are bundled in `static/vendor`, including their licenses. The viewer makes no
 external browser requests and works offline after dependencies are installed.
 
 - Month and week views, including all-day events and timestamp ranges.
-- Blue timestamps, green scheduled entries, and red deadlines. Hover over an
-  event for its full title and description.
+- Blue filled timestamps, green outlined scheduled entries, and red filled
+  deadlines. Hover over an event for its full title and description.
 - Active timestamps and Org repeaters (`+`, `++`, `.+`, with hour/day/week/month/
   year intervals) are exported by org2ical. Repeater modes are shown as fixed
   calendar recurrences; completion-dependent Org behavior is not simulated.

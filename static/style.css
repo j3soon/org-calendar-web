@@ -39,9 +39,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #90b4e4; outline-offs
 .calendar-meta { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 32px 0 14px; }
 .legend { display: flex; flex-wrap: wrap; gap: 22px; padding: 0; margin: 0; list-style: none; font-size: 12px; color: #637087; }
 .legend li { display: flex; gap: 7px; align-items: center; }
-.dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.swatch { width: 12px; height: 9px; border: 1px solid transparent; border-radius: 2px; display: inline-block; }
 .timestamp { background: #3779c4; }
-.scheduled { background: #27835c; }
+.scheduled { border-color: #27835c; }
 .deadline { background: #c64b50; }
 #status { margin: 0; color: #7b8799; font-size: 11px; }
 #warning, .notice { padding: 12px 16px; background: #fff4df; border: 1px solid #eedbb6; border-radius: 6px; color: #77501c; font-size: 13px; line-height: 1.6; }
@@ -56,7 +56,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #90b4e4; outline-offs
 .fc .fc-day-today .fc-daygrid-day-number { color: #2465b0; font-weight: 700; }
 .fc .fc-daygrid-event { margin-top: 3px; border-radius: 4px; font-size: 11px; }
 .fc .fc-h-event .fc-event-main { padding: 2px 5px; }
-.fc .fc-daygrid-dot-event { padding: 3px; }
 .fc .fc-daygrid-day-frame { min-height: 100px; }
 .fc .fc-timegrid-event .fc-event-main { padding: 4px; }
 .fc .fc-timegrid-slot { height: 2.5em; }

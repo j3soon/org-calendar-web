@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return types.map(([type, color]) => ({
       url: snapshot ? snapshot.urls[type] : `/calendar.ics?event_type=${type}`,
       format: "ics",
-      color,
+      backgroundColor: type === "SCHEDULED" ? "transparent" : color,
+      borderColor: color,
+      textColor: type === "SCHEDULED" ? color : "#fff",
       success(events, response) {
         sourceStatus.set(type, {
           ok: response.ok,
@@ -94,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks: false,
     dayMaxEvents: 3,
     allDayText: "All day",
+    eventDisplay: "block",
     eventTimeFormat: { hour: "2-digit", minute: "2-digit", hour12: false },
     slotLabelFormat: { hour: "2-digit", minute: "2-digit", hour12: false },
     scrollTime: "08:00:00",
